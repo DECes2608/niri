@@ -1,0 +1,57 @@
+# ─── Mako Config ─────────────────────────────────────────
+# Monochrome / sert köşeli tema
+# ─────────────────────────────────────────────────────────
+
+# Genel görünüm
+background-color=#0d0d0dee
+text-color=#e8e8e8
+border-color=#4a4a4a
+progress-color=over #6a6a6aaa
+
+border-size=1
+border-radius=0
+padding=12,16
+
+# Font
+font=monospace 11
+
+# Boyut ve konum
+width=320
+height=110
+margin=12
+anchor=top-right
+
+# Davranış
+default-timeout=5000
+ignore-timeout=0
+max-visible=5
+sort=-time
+
+# İkon
+icon-path=/usr/share/icons/Papirus-Dark
+max-icon-size=40
+
+# ─── Urgency: low ────────────────────────────────────────
+[urgency=low]
+background-color=#0a0a0add
+text-color=#8a8a8a
+border-color=#333333
+default-timeout=3000
+
+# ─── Urgency: normal ─────────────────────────────────────
+[urgency=normal]
+background-color=#0d0d0dee
+text-color=#e8e8e8
+border-color=#4a4a4a
+default-timeout=5000
+
+# ─── Urgency: high ───────────────────────────────────────
+[urgency=high]
+background-color=#000000ee
+text-color=#ffffff
+border-color=#999999
+default-timeout=0
+
+# ─── Grouped / stacked bildirimler ───────────────────────
+[grouped]
+format=<b>%s</b>\n%b\n<small>(%g bildiri)</small>
