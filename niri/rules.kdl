@@ -1,11 +1,3 @@
-//          ____        __                    
-//         / __ \__  __/ /__  _____
-//        / /_/ / / / / / _ \/ ___/
-//       / _, _/ /_/ / /  __(__  ) 
-//      /_/ |_|\__,_/_/\___/____/  
-//                                                  
-
-
 // Niri overview backdrop image
 layer-rule {
     match namespace="awww-daemon-backdrop"
@@ -24,11 +16,15 @@ window-rule {
     }
 }
 
+window-rule {
+    match app-id=r"steam*"
+    open-focused true
+}
 
-
-// Opacity and background effect for specific applications
+// Opacity for file managers and terminal
 window-rule {
     match app-id=r#"thunar"#
+    match app-id=r#"nautilus"#
     match app-id=r#"Alacritty"#
     opacity 0.8
 
@@ -40,15 +36,16 @@ window-rule {
     }
 }
 
-// Rules for specific applications
+// Picture-in-picture: open floating
 window-rule {
     match app-id=r#"zen$"# title="^Picture-in-Picture$"
     match app-id=r#"app.zen_browser.zen$"# title="^Picture-in-Picture$"
     match app-id=r#"brave-origin$"# title="^Picture-in-Picture$"
-    
+
     open-floating true
 }
 
+// Browsers and editor: open maximized
 window-rule {
     match app-id=r#"zen"#
     match app-id=r#"app.zen_browser.zen"#
@@ -58,8 +55,7 @@ window-rule {
     open-maximized true
 }
 
-
-// Rules for xdg-desktop-portal-gtk
+// xdg-desktop-portal-gtk / copyq: floating popup
 window-rule {
     match app-id=r#"xdg-desktop-portal-gtk"#
     match app-id=r#"copyq"#
@@ -70,7 +66,7 @@ window-rule {
     min-height 600
 }
 
-// Rules for specific layers
+// Waybar layer
 layer-rule {
     match namespace="waybar"
 
@@ -85,9 +81,7 @@ layer-rule {
     }
 }
 
-
-
-// Rules for hakuspace
+// Hakuspace apps
 window-rule {
     match app-id=r#"seycava"#
     match app-id=r#"seylavat"#
@@ -102,9 +96,7 @@ window-rule {
     default-column-width { proportion 0.6; }
 }
 
-
-
-// Rules for desktop icons
+// Desktop icons rename dialog
 window-rule {
     match app-id="desktop_icons.py"
     match title="Rename"
