@@ -1,7 +1,6 @@
 # System & Environment Overview
 
-![Desktop Setup](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/31ae2adb-c07e-43c8-8f10-54f443d8cedf" />
-)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a430a7c6-5db3-4cbe-a31a-b1dac83364c7" />
 
 ## Core Applications
 
