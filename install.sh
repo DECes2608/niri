@@ -89,7 +89,6 @@ hiçbirini istemiyorsan boş bırakıp Enter'a bas:
   3) visual-studio-code-bin  VS Code                (hazır ikili, derleme YOK)
   4) awww                    duvar kağıdı daemonu   (küçük derleme, ~1-2 dk)
   5) mpvpaper                video duvar kağıdı      (küçük derleme, hızlı)
-  6) ncspot                  waybar ncspot script'leri  (BÜYÜK derleme, UZUN sürebilir)
 
 EOF
         read -rp "Seçim: " -a AUR_SEL
@@ -99,7 +98,6 @@ EOF
             [3]=visual-studio-code-bin
             [4]=awww
             [5]=mpvpaper
-            [6]=ncspot
         )
         for n in "${AUR_SEL[@]-}"; do
             [[ -n "${AUR_MAP[$n]:-}" ]] && AUR_CHOSEN+=("${AUR_MAP[$n]}")
@@ -114,25 +112,25 @@ case "$PM" in
     pacman)
         CORE_PKGS=(niri xwayland-satellite waybar mako rofi alacritty thunar
                    zathura zathura-pdf-poppler neovim fish playerctl wl-clipboard
-                   cliphist copyq network-manager-applet blueman fcitx5 fcitx5-gtk
+                   cliphist blueman fcitx5 fcitx5-gtk
                    fcitx5-qt fcitx5-configtool gammastep hyprlock git base-devel
                    imagemagick mpv bluez bluez-utils ydotool wlr-randr) ;;
     apt)
         CORE_PKGS=(waybar mako-notifier rofi alacritty thunar zathura
                    zathura-pdf-poppler neovim fish playerctl wl-clipboard cliphist
-                   copyq network-manager-gnome blueman fcitx5 fcitx5-frontend-gtk3
+                   blueman fcitx5 fcitx5-frontend-gtk3
                    fcitx5-frontend-qt5 gammastep hyprlock git imagemagick mpv
                    bluez ydotool wlr-randr) ;;
     dnf)
         CORE_PKGS=(niri xwayland-satellite waybar mako rofi alacritty thunar
                    zathura zathura-pdf-poppler neovim fish playerctl wl-clipboard
-                   cliphist copyq network-manager-applet blueman fcitx5 fcitx5-gtk3
+                   cliphist-applet blueman fcitx5 fcitx5-gtk3
                    fcitx5-qt gammastep hyprlock git ImageMagick mpv
                    bluez ydotool wlr-randr) ;;
     zypper)
         CORE_PKGS=(waybar mako rofi alacritty thunar zathura
                    zathura-plugin-pdf-poppler neovim fish playerctl wl-clipboard
-                   cliphist copyq NetworkManager-applet blueman fcitx5 fcitx5-gtk3
+                   cliphist blueman fcitx5 fcitx5-gtk3
                    fcitx5-qt5 gammastep hyprlock git ImageMagick mpv
                    bluez ydotool wlr-randr) ;;
 esac
