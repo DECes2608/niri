@@ -1,6 +1,7 @@
 ## look
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c5f9ec6b-edd1-405b-8b6d-df053142c334" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/609147fb-fef3-4294-a4ba-fb3931d4ba4d" />
+
 
 ### Basic apps that I use
 
@@ -12,7 +13,7 @@ document viewer = zathura
 
 terminal = alacritty
 
-clipboard = copyq
+clipboard = rofi
 
 text-editor = nvim, vim
 
@@ -46,3 +47,9 @@ distro = arch
 -->
 - config.sh
 - powermenu.sh
+- clipboard.sh
+- clip-clear.sh
+
+#### for acces to run
+
+chmod +x ~/.local/bin/* ~/.config/waybar/scripts/* ~/.config/rofi/scripts/*
