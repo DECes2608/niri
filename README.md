@@ -1,55 +1,51 @@
-## look
+# System & Environment Overview
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/609147fb-fef3-4294-a4ba-fb3931d4ba4d" />
+![Desktop Setup](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/31ae2adb-c07e-43c8-8f10-54f443d8cedf" />
+)
 
+## Core Applications
 
-### Basic apps that I use
+| Category | Application |
+| :--- | :--- |
+| **Browser** | Helium |
+| **File Manager** | Thunar |
+| **Document Viewer** | Zathura |
+| **Terminal** | Alacritty |
+| **App Launcher & Clipboard** | Rofi |
+| **Text Editor** | Neovim / Vim |
+| **Code Editor** | VS Code (`code`) |
+| **Status Bar** | Waybar |
+| **Distribution** | Arch Linux |
 
-browser = helium
+---
 
-file-manager = thunar
+## Custom Scripts
 
-document viewer = zathura
+* `~/.local/bin/`
+  * `autoclicker-toggle.sh`
+  * `kitap-select.sh`
+  * `wallpaper-select.sh`
+  * `wallpaper-set.sh`
+  * `nightlight-toggle.sh`
+  * `warp-toggle.sh`
 
-terminal = alacritty
+* `~/.config/waybar/scripts/`
+  * `ncspot_event.sh`
+  * `ncspot_poll.sh`
+  * `toggle_music_workspace.sh`
+  * `warp_toggle.sh`
 
-clipboard = rofi
+* `~/.config/rofi/scripts/`
+  * `config.sh`
+  * `powermenu.sh`
+  * `clipboard.sh`
+  * `clip-clear.sh`
 
-text-editor = nvim, vim
+---
 
-code-editor = vscode (code)
+## Execution Permissions
 
-app-launcher = rofi
+Make all scripts executable with a single command:
 
-bar = waybar
-
-distro = arch
-
-### scripts
-
-~/.local/bin/
--->
-- autoclicker-toggle.sh
-- kitap-select.sh
-- wallpaper-select.sh
-- wallpaper-set.sh
-- nightlight-toggle.sh
-- warp-toggle.sh
-
-~/.config/waybar/scripts/
--->
-- ncspot_event.sh
-- ncspot_poll.sh
-- toggle_music_workspace.sh
-- warp_toggle.sh
-
-~/.config/rofi/scripts
--->
-- config.sh
-- powermenu.sh
-- clipboard.sh
-- clip-clear.sh
-
-#### for acces to run
-
+```bash
 chmod +x ~/.local/bin/* ~/.config/waybar/scripts/* ~/.config/rofi/scripts/*
