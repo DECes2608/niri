@@ -1,0 +1,17 @@
+/* meadow.css — pastoral mavi-yeşil, gruvbox sıcaklığıyla */
+
+@define-color bg_bar     #1a1f1e;   /* koyu çayır siyahı */
+@define-color bg_module  #222927;   /* derin çimen tonu */
+@define-color border_module #3d4f4b; /* soluk yeşil-gri kenar */
+@define-color text_main  #dce8e0;   /* ay ışığı beyazı */
+@define-color text_dim   #8aaa98;   /* soluk çayır yeşili */
+
+@define-color ws_bg      #181e1d;
+@define-color ws_text    #4a6358;
+@define-color ws_border  #2c3a36;
+
+@define-color ws_active_bg   #a8c5b5; /* soluk mavi-yeşil — ekrandaki o hava tonu */
+@define-color ws_active_text #151a19;
+@define-color ws_hover_bg    #2e4a42;
+
+@define-color bg_clock   #2e4a42;

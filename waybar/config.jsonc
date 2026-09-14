@@ -1,0 +1,71 @@
+{
+  "layer": "top",
+  "position": "bottom",
+  "height": 26,
+  "spacing": 2,
+  "modules-left": ["niri/workspaces", "niri/window"],
+  "modules-center": ["clock"],
+  "modules-right": ["tray", "pulseaudio", "network", "custom/bluetooth"],
+
+  "niri/workspaces": {
+    "format": "{index}",
+    "all-outputs": false,
+    "on-click": "activate"
+  },
+
+  "niri/window": {
+    "format": "{}",
+    "max-length": 40,
+    "separate-outputs": true
+  },
+
+  "custom/warp": {
+    "format": "{}",
+    "return-type": "json",
+    "interval": 2,
+    "exec": "~/.config/waybar/scripts/warp-toggle.sh",
+    "on-click": "~/.config/waybar/scripts/warp-toggle.sh toggle",
+    "tooltip": true
+  },
+
+  "custom/bluetooth": {
+    "exec": "bluetoothctl show | grep -q 'Powered: yes' && echo '󰂯' || echo '󰂲'",
+    "on-click": "blueman-manager",
+    "on-click-right": "bluetoothctl power $(bluetoothctl show | grep -q 'Powered: yes' && echo 'off' || echo 'on')",
+    "format": "{}",
+    "interval": 2
+  },
+
+  "memory": {
+    "interval": 2,
+    "format": "󰍛 {used:0.1f}G",
+    "tooltip-format": "Kullanılan: {used:0.1f}G / {total:0.1f}G"
+  },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "locale": "tr_TR.utf8",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+
+  "network": {
+    "on-click": "nm-connection-editor",
+    "on-click-right": "kitty -e nmtui",
+    "format-wifi": "󰤨",
+    "format-ethernet": "󰈀",
+    "format-linked": "󰈀",
+    "format-disconnected": "󰤭",
+    "tooltip-format": "{essid} — {signalStrength}%"
+  },
+
+  "pulseaudio": {
+    "format": "󰕾 {volume}%",
+    "format-muted": "󰝟",
+    "on-click": "pavucontrol"
+  },
+
+  "tray": {
+    "icon-size": 14,
+    "spacing": 6
+  }
+}

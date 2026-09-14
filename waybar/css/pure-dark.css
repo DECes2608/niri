@@ -1,0 +1,23 @@
+@define-color bg_bar #0c0c0c;
+@define-color bg_module #161616;
+@define-color border_module #2a2a2a;
+@define-color text_main #ffffff;
+@define-color text_dim #eeeeee;
+
+@define-color ws_bg #121212;
+@define-color ws_text #777777;
+@define-color ws_border #222222;
+
+@define-color ws_active_bg #ffffff;
+@define-color ws_active_text #000000;
+@define-color ws_hover_bg #222222;
+
+@define-color bg_clock #1c1c1c;
+
+@define-color warp_bg_connected #16201a;
+@define-color warp_text_connected #a8d8b0;
+@define-color warp_border_connected #2e4a38;
+
+@define-color warp_bg_disconnected #201414;
+@define-color warp_text_disconnected #e06c6c;
+@define-color warp_border_disconnected #4a2e2e;

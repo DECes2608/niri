@@ -1,0 +1,92 @@
+/* @import "css/gruvbox.css"; */
+/* @import "css/pure-dark.css"; */
+/* @import "css/waybar_meadow.css"; */
+@import "css/npb.css";
+
+* {
+    font-family: "Monocraft", "Symbols Nerd Font", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 0px;
+    border: none;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: @bg_bar;
+    color: @text_main;
+}
+
+/* --- Ortak modül stili --- */
+#clock,
+#tray,
+#memory,
+#network,
+#pulseaudio,
+#custom-bluetooth {
+    padding: 2px 8px;
+    margin: 3px 2px;
+    background-color: @bg_bar;
+    color: @text_dim;
+    transition: color 0.2s ease;
+}
+
+#clock:hover,
+#tray:hover,
+#memory:hover,
+#network:hover,
+#pulseaudio:hover,
+#custom-bluetooth:hover {
+    background-color: @bg_bar;
+    color: @text_main;
+}
+
+/* --- Workspaces --- */
+#workspaces {
+    margin: 1px 0px;
+    background-color: @bg_bar;
+    padding: 0px;
+}
+
+#workspaces button {
+    padding: 2px 1px;
+    margin: 0px;
+    font-size: 11px;
+    color: @ws_text;
+    background-color: @bg_bar;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    color: @ws_active_bg;
+}
+
+#workspaces button:hover {
+    color: @ws_hover_bg;
+}
+
+#workspaces button.urgent {
+    color: #cc241d;
+    animation: blink 0.5s alternate infinite;
+}
+
+/* --- Aktif Pencere Modülü --- */
+#window {
+    background-color: @bg_bar;
+    color: @text_main;
+    padding: 2px 10px;
+    margin: 3px 6px 3px 4px;
+    font-size: 11px;
+}
+
+#custom-warp.connected {
+    color: @warp_text_connected;
+    background-color: @bg_bar;
+    padding: 0 10px;
+}
+
+#custom-warp.disconnected {
+    color: @warp_text_disconnected;
+    background-color: @bg_bar;
+    padding: 0 10px;
+}

@@ -1,0 +1,26 @@
+@define-color bg_bar #000000;
+@define-color bg_module #000000;
+@define-color border_module #000000;
+
+/* Soğuk leylak / yıldız mavisi */
+@define-color text_main #b8c4e6;
+@define-color text_dim #646b85;
+
+@define-color ws_bg #000000;
+@define-color ws_text #4a506b;
+@define-color ws_border #000000;
+
+@define-color ws_active_bg #8e9ec7;
+@define-color ws_active_text #000000;
+@define-color ws_hover_bg #646b85;
+
+@define-color bg_clock #000000;
+
+/* Warp renkleri */
+@define-color warp_bg_connected #000000;
+@define-color warp_text_connected #74ab80;
+@define-color warp_border_connected #000000;
+
+@define-color warp_bg_disconnected #000000;
+@define-color warp_text_disconnected #b85c6d;
+@define-color warp_border_disconnected #000000;
