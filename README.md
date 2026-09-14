@@ -42,9 +42,22 @@
 
 ---
 
+## Installation
+
+Clone the repo and run the installer — it detects your distro (Arch/Debian/Fedora/openSUSE),
+installs the required packages, and copies the dotfiles into place:
+
+```bash
+git clone https://github.com/DECes2608/niri.git
+cd niri
+chmod +x install.sh && ./install.sh
+```
+
+---
+
 ## Execution Permissions
 
-Make all scripts executable with a single command:
+For manual/partial setups, make all scripts executable with a single command:
 
 ```bash
 chmod +x ~/.local/bin/* ~/.config/waybar/scripts/* ~/.config/rofi/scripts/*
