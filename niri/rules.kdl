@@ -59,49 +59,10 @@ window-rule {
 window-rule {
     match app-id=r#"xdg-desktop-portal-gtk"#
     match app-id=r#"copyq"#
+    match app-id=r#"blueman"#
 
     open-floating true
     default-floating-position x=660 y=240
     min-width 400
     min-height 600
-}
-
-// Waybar layer
-layer-rule {
-    match namespace="waybar"
-
-    opacity 1.0
-    shadow {
-        off
-        softness 100
-        spread 12
-        offset x=0 y=0
-        draw-behind-window true
-        color "#00000064"
-    }
-}
-
-// Hakuspace apps
-window-rule {
-    match app-id=r#"seycava"#
-    match app-id=r#"seylavat"#
-    match app-id=r#"seyclock"#
-
-    default-column-width { proportion 0.4; }
-}
-
-window-rule {
-    match app-id=r#"seycmd"#
-
-    default-column-width { proportion 0.6; }
-}
-
-// Desktop icons rename dialog
-window-rule {
-    match app-id="desktop_icons.py"
-    match title="Rename"
-
-    open-floating true
-    min-width 300
-    min-height 100
 }

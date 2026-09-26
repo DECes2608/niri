@@ -6,21 +6,22 @@ binds {
     // Custom script launchers
     Mod+L            hotkey-overlay-title="Adjust Brightness" { spawn "sh" "-c" "$HOME/.local/bin/nightlight_toggle.sh"; }
     Mod+X            hotkey-overlay-title="powermenu: rofi" { spawn "sh" "-c" "~/.config/rofi/scripts/powermenu.sh"; }
-    Mod+V            hotkey-overlay-title="Clipboard: copyq" { spawn "copyq" "show"; }
+    XF86Tools                                               { spawn "alacritty" "-e" "yt-music"; }
+    Mod+V            hotkey-overlay-title="clipboard" { spawn "~/.config/rofi/scripts/clipboard.sh"; }
+    Mod+Shift+V { spawn "~/.config/rofi/scripts/clip-clear.sh"; }
     Mod+C            hotkey-overlay-title="Configs: nvim" { spawn "sh" "-c" "~/.config/rofi/scripts/config.sh"; }
+    Mod+Z            hotkey-overlay-title="cpp" { spawn "alacritty" "--title" "nvim" "-e" "nvim" "~/cpp"; }
     Mod+Y            hotkey-overlay-title="Wallpaper Select" { spawn "sh" "-c" "$HOME/.local/bin/wallpaper_select.sh"; }
     Mod+K            hotkey-overlay-title="Kitap Select" { spawn "sh" "-c" "$HOME/.local/bin/kitap-select.sh"; }
-    Mod+M            hotkey-overlay-title="Music: Ncspot" { spawn "alacritty" "-e" "ncspot"; }
-    Mod+R            hotkey-overlay-title="Radio: shortwave" { spawn "shortwave"; }
     Mod+Shift+M      hotkey-overlay-title="Mpv: lollypop" { spawn "lollypop"; }
     Mod+Shift+C      hotkey-overlay-title="Code: VScode" { spawn "code"; }
     Mod+Shift+S      hotkey-overlay-title="Open Games: Steam" { spawn "steam"; }
     Mod+Return       hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
     Mod+O            hotkey-overlay-title="Notes: Obsidian" { spawn "obsidian"; }
     Mod+D            hotkey-overlay-title="Run Application Menu: rofi" { spawn "rofi" "-show" "drun"; }
-    Mod+E            hotkey-overlay-title="Open File Manager: thunar" { spawn "thunar"; }
-    Mod+Shift+D      hotkey-overlay-title="Communication: Discord" { spawn "discord"; }
-    Mod+B            hotkey-overlay-title="Open Browser: helium-browser" { spawn "helium-browser"; }
+    Mod+Shift+E            hotkey-overlay-title="Open File Manager: thunar" { spawn "thunar"; }
+    Mod+E            hotkey-overlay-title="Open File Manager yazi" { spawn "alacritty" "-e" "yazi"; }
+    Mod+B            hotkey-overlay-title="Open Browser: librewolf" { spawn "librewolf"; }
     Mod+Slash        hotkey-overlay-title="Open Emoji Menu" { spawn "rofi" "-modi" "emoji" "-show" "emoji"; }
     Mod+F6           { spawn "~/.local/bin/autoclicker-toggle.sh"; }
     Mod+F5           { spawn "~/.local/bin/autoclick.sh"; }

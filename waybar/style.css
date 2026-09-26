@@ -1,7 +1,9 @@
 /* @import "css/gruvbox.css"; */
 /* @import "css/pure-dark.css"; */
 /* @import "css/waybar_meadow.css"; */
-@import "css/npb.css";
+/* @import "css/npb.css"; */
+@import "css/pdp.css";
+
 
 * {
     font-family: "Monocraft", "Symbols Nerd Font", sans-serif;
