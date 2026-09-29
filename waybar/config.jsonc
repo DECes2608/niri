@@ -5,7 +5,7 @@
   "spacing": 2,
   "modules-left": ["niri/workspaces", "niri/window"],
   "modules-center": ["clock"],
-  "modules-right": ["tray", "pulseaudio", "network", "custom/bluetooth"],
+  "modules-right": ["tray", "pulseaudio", "network", "custom/bluetooth", "battery"],
 
   "niri/workspaces": {
     "format": "{index}",
@@ -17,6 +17,18 @@
     "format": "{}",
     "max-length": 40,
     "separate-outputs": true
+  },
+
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰚥 {capacity}%",
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "tooltip-format": "{timeTo} ({capacity}%)"
   },
 
   "custom/warp": {
